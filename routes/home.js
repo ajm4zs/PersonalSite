@@ -31,12 +31,6 @@ router.get('/tetris', function (req, res, next) {
 	});
 });
 
-router.get('/contact', function (req, res, next) {
-	res.render('contact', {
-		title: 'Alex Mulchandani'
-	});
-});
-
 router.get('/simba', function (req, res, next) {
 	res.render('simba', {
 		title: 'Alex Mulchandani'

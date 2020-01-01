@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Alex Mulchandani</title>
+
+		<link rel="icon" href="images/AM_Logo_Cropped.png">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+		<!-- Bootstrap core CSS -->
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Material Design Bootstrap -->
+		<link href="/css/mdb.min.css" rel="stylesheet">
+
+		<link href="/css/style.css" rel="stylesheet">
+
+	</head>
+	<body style="background-color: #231F20">
+
+		<nav class="navbar navbar-expand-lg navbar-light static-top text-center" style="color: #231F20">
+			<a class="navbar-brand" href="/"><img src="/images/AM_Logo_Cropped.png" height="80" width="80" alt="Alex Mulchandani"></a>
+			<%- include('nav-items'); -%>
+		</nav>
+
+		<section class="page-section" id="portfolio">
+			<div class="container shadow p-3 mb-5 rounded">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase" style="color: white; font-family: 'Courier Prime', monospace;">Data Engineering</h2>
+						<br><br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 portfolio-item">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fas fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-fluid" src="images/apt4.jpg" style="width: 100%; height: 100%;" alt="">
+						</a>
+						<div class="portfolio-caption portfolio-text">
+							<h4>Data Engineer</h4>
+							<p class="text-muted">APT</p>
+						</div>
+					</div>
+					<div class="col-md-4 portfolio-item">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+							<i class="fas fa-plus fa-3x"></i>
+							</div>
+						</div>
+						<img class="img-fluid" src="images/apt5.jpg" style="width: 100%; height: 100%;" alt="">
+						</a>
+						<div class="portfolio-caption">
+						<h4>Lead Data Engineer</h4>
+						<p class="text-muted">APT</p>
+						</div>
+					</div>
+					<div class="col-md-4 portfolio-item" style="background-color: #231F20">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+							<i class="fas fa-plus fa-3x"></i>
+							</div>
+						</div>
+						<img class="img-fluid" src="images/mc2.png" style="background-color: #231F20; width: 100%; height: 100%;" alt="">
+						</a>
+						<div class="portfolio-caption">
+						<h4>Principal Data Engineer</h4>
+						<p class="text-muted">APT / Mastercard</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container shadow p-3 mb-5 rounded">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase" style="color: white; font-family: 'Courier Prime', monospace;">Full Stack Development</h2>
+						<br><br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 portfolio-item">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fas fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-fluid" src="images/pivotgroup.png" style="width: 100%; height: 100%;" alt="">
+						</a>
+						<div class="portfolio-caption portfolio-text">
+							<h4>CTO</h4>
+							<p class="text-muted">The Pivot Group</p>
+						</div>
+					</div>
+					<div class="col-md-4 portfolio-item">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+							<i class="fas fa-plus fa-3x"></i>
+							</div>
+						</div>
+						<h1 style="background-color: #231F20; font-family: 'thecut'; color: white; font-size: 500%; text-align: center; padding: 20%">theCut</h1>
+						</a>
+						<div class="portfolio-caption">
+						<h4>Full Stack Developer</h4>
+						<p class="text-muted">theCut App</p>
+						</div>
+					</div>
+					<div class="col-md-4 portfolio-item" style="background-color: #231F20">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+							<i class="fas fa-plus fa-3x"></i>
+							</div>
+						</div>
+						<img class="img-fluid" src="images/fit1.jpg" style="width: 100%; height: 100%;" alt="">
+						</a>
+						<div class="portfolio-caption">
+						<h4>Full Stack Developer</h4>
+						<p class="text-muted">FitnessTracker App</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="text-center">
+			<a href="mailto:ajmulchapps@gmail.com" class="fas fa-envelope fa-nav" style="color: white"></a>
+			<a href="https://www.linkedin.com/in/alexmulchandani/" target="_blank" class="fab fa-linkedin-in fa-nav" style="color: white"></a>
+			<a href="https://www.github.com/ajm4zs" target="_blank" class="fab fa-github fa-nav" style="color: white"></a>
+			<a href="https://www.instagram.com/ajmulch/" target="_blank" class="fab fa-instagram fa-nav" style="color: white"></a>
+			<a href="https://www.facebook.com/alex.mulchandani/" target="_blank" class="fab fa-facebook fa-nav" style="color: white"></a>
+		</div>
+
+		<!-- Portfolio Modals -->
+
+		<!-- Modal 1 -->
+		<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+				</div>
+				<div class="container">
+				<div class="row">
+					<div class="col-lg-8 mx-auto">
+					<div class="modal-body">
+						<!-- Project Details Go Here -->
+						<h2 class="text-uppercase">Project Name</h2>
+						<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+						<img class="img-fluid d-block mx-auto" src="images/track.jpg" alt="">
+						<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+						<ul class="list-inline">
+						<li>Date: January 2017</li>
+						<li>Client: Threads</li>
+						<li>Category: Illustration</li>
+						</ul>
+						<button class="btn btn-primary" data-dismiss="modal" type="button">
+						<i class="fas fa-times"></i>
+						Close Project</button>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

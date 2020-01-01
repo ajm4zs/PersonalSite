@@ -1,66 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<title>Alex Mulchandani</title>
+<html>
+  <head>
 
-		<link rel="icon" href="images/AM_Logo_Cropped.png">
+    <title>Alex Mulchandani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-		<!-- Bootstrap core CSS -->
-		<link href="/css/bootstrap.min.css" rel="stylesheet">
-		<!-- Material Design Bootstrap -->
-		<link href="/css/mdb.min.css" rel="stylesheet">
+    <link href="/images/AM_Logo_Cropped.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
-		<link href="/css/style.css" rel="stylesheet">
+    <link href="/css/application.css" media="all" rel="stylesheet" />
+	<link href="/css/about.css" media="screen" rel="stylesheet" />
+	<link href="/css/animate.css" media="screen" rel="stylesheet" />
+	<link href="/css/side-navigation.css" media="screen" rel="stylesheet" />
 
-	</head>
-	<body style="background-color: #231F20">
-
-		<nav class="navbar navbar-expand-lg navbar-light static-top text-center" style="color: #231F20">
-			<a class="navbar-brand" href="/"><img src="/images/AM_Logo_Cropped.png" height="80" width="80" alt="Alex Mulchandani"></a>
-			<a href="/about" class="wow bounceInDown animated ml-4" data-wow-delay="0s" style="color: white; visibility: visible; animation-delay: 0s; animation-name: bounceInDown">About</a>
-			<a href="/portfolio" class="wow bounceInDown animated ml-4" data-wow-delay="0s" style="color: white; visibility: visible; animation-delay: 0s; animation-name: bounceInDown">Portfolio</a>
-			<a href="/resume" class="wow bounceInDown animated ml-4" data-wow-delay="0s" style="color: white; visibility: visible; animation-delay: 0s; animation-name: bounceInDown">Resume</a>
-			<a href="/tetris" class="wow bounceInDown animated ml-4" data-wow-delay="0s" style="color: white; visibility: visible; animation-delay: 0s; animation-name: bounceInDown">Tetris</a>
-			<a href="/contact" class="wow bounceInDown animated ml-4" data-wow-delay="0s" style="color: white; visibility: visible; animation-delay: 0s; animation-name: bounceInDown">Contact</a>
-			<a href="/simba" class="wow bounceInDown animated ml-4" data-wow-delay="0s" style="color: white; visibility: visible; animation-delay: 0s; animation-name: bounceInDown">Simba</a>
-		</nav>
-
-		<div id="about-background" class="container-fluid background-height">
+    <script src="/js/application.js"></script>
+	<script src="/js/about.js"></script>
+	<script src="/js/wow.min.js"></script>
+	<script src="/js/side-navigation.js"></script>
 
 
-			<div class="row" style="height:100%">
+  </head>
 
-				<div id="about-background-left" class="col-3" style="margin-top: 2%; height: 100%; width: 25%; float: left">
+  <body>
 
-					<h1 style="color: white;">Engineer </h1>
-					<h1 style="color: white;">Entrepreneur </h1>
-					<h1 style="color: white;">Mentor </h1>
 
-					<div id="learnmore-box" style="margin-top: 40%;">
 
-						<h2 style="color: white;">
-							A good day is the result of good decisions. A good life is the result of a lot of good days. Make each day your masterpiece.
-						</h2>
-						<button id="learnmore-btn">
-							More About Me
-						</button>
+<script>new WOW().init();</script>
 
-					</div>
-				</div>
 
-				<div id="about-background-right" class="col-9" style="height: 100%; width: 75%; background-image: url('images/alex_resize.jpg'); background-size: 100% 100%; float: right;">
-				</div>
 
-			</div>
-		</div>
+<div class="side-navigation right">
 
-	</body>
+  <div class="action-box">
+    <img alt="3lines" class="action-icon" id="three-lines-icon" src="/images/3lines.svg" />
+    <img alt="Cross" class="action-icon" id="cross-icon" src="/images/cross.svg" style="display: none;" />
+  </div>
+  <div class="link-box">
+    <a href="/" class="links">Home</a>
+    <a href="/portfolio" class="links">Portfolio</a>
+    <a href="/resume" class="links">Resume</a>
+	<a href="/contact" class="links">Contact</a>
+	<a href="/simba" class="links">Simba</a>
+  </div>
 
+</div>
+
+
+<div id="about-background" class="background-height">
+
+  <div id="about-background-left" class="background-height">
+    <h1 class="wow fadeInLeft" data-wow-duration=".75s" data-wow-delay=".75s">Engineer</h1>
+    <h1 class="wow fadeInLeft" data-wow-duration=".75s" data-wow-delay="1.5s">Entreprenuer</h1>
+    <h1 class="wow fadeInLeft" data-wow-duration=".75s" data-wow-delay="2.25s">Mentor</h1>
+
+    <div id="learnmore-box">
+      <h2 id="jc-quote" class="wow fadeInLeft" data-wow-duration=".75s" data-wow-delay="3s">A good day is the result of good decisions. A good life is the result of a lot of good days. Make each day your masterpiece.</h2>
+      <button class="wow bounceInLeft" data-wow-duration="1.25s" data-wow-delay="3.75s" id="learnmore-btn">More About Me</button>
+    </div>
+
+    <div id="about-background-left-footer" class="wow bounceInUp" data-wow-duration="1.25s" data-wow-delay="3.75s">
+
+      <div class="social-link-box visible-xs-lg">
+        <a href="mailto:ajmulchapps@gmail.com"><img alt="Email gray" class="social-link" src="/images/email_gray.svg" style="margin-left: 0px;" /></a>
+        <a href="https://www.linkedin.com/in/alexmulchandani"><img alt="Linkedin gray" class="social-link" src="/images/linkedin_gray.svg" /></a>
+        <a href="https://github.com/ajm4zs"><img alt="Github gray" class="social-link" src="/images/github_gray.svg" /></a>
+        <a href="https://www.facebook.com/alex.mulchandani"><img alt="Facebook gray" class="social-link" src="/images/facebook_gray.svg" /></a>
+        <a href="https://www.instagram.com/ajmulch"><img alt="Instagram gray" class="social-link" src="/images/instagram_gray.svg" /></a>
+      </div>
+
+      <div class="social-link-box visible-md">
+        <a href="mailto:ajmulchapps@gmail.com"><img alt="Email gray" class="social-link" src="/images/email_gray.svg" style="margin-left: 0px;" /></a>
+        <a href="https://www.linkedin.com/in/alexmulchandani"><img alt="Linkedin gray" class="social-link" src="/images/linkedin_gray.svg" /></a>
+        <a href="https://github.com/ajm4zs"><img alt="Github gray" class="social-link" src="/images/github_gray.svg" /></a>
+      </div>
+      <div class="social-link-box visible-md">
+        <a href="https://www.facebook.com/alex.mulchandani"><img alt="Facebook gray" class="social-link" src="/images/facebook_gray.svg" style="margin-left: 0px;" /></a>
+        <a href="https://www.instagram.com/ajmulch"><img alt="Instagram gray" class="social-link" src="/images/instagram_gray.svg" /></a>
+      </div>
+
+      <div class="social-link-box visible-sm">
+        <a href="mailto:ajmulchapps@gmail.com"><img alt="Email gray" class="social-link" src="/images/email_gray.svg" style="margin-left: 0px;" /></a>
+        <a href="https://www.linkedin.com/in/alexmulchandani"><img alt="Linkedin gray" class="social-link" src="/images/linkedin_gray.svg" /></a>
+      </div>
+      <div class="social-link-box visible-sm">
+        <a href="https://www.facebook.com/alex.mulchandani"><img alt="Facebook gray" class="social-link" src="/images/facebook_gray.svg" style="margin-left: 0px;" /></a>
+        <a href="https://www.instagram.com/ajmulch"><img alt="Instagram gray" class="social-link" src="/images/instagram_gray.svg" /></a>
+      </div>
+      <div class="social-link-box visible-sm">
+        <a href="https://github.com/ajm4zs"><img alt="Github gray" class="social-link" src="/images/github_gray.svg" style="margin-left: 0px;" /></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="about-background-right" class="background-height"></div>
+
+</div>
+
+<div id="about-content-container">
+  <div id="about-content-diagonal">
+
+    <div class="about-content-inner wow fadeIn" style="margin-bottom: 50px;">
+      <h1>Hello, I'm <b class="text-red">Alex Mulchandani</b></h1>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <img alt="Maryland state" src="/images/maryland.png" />
+    </div>
+
+    <div class="about-content-inner wow fadeIn" style="min-height: 10px">
+      <h2 style="display: inline">I was born and raised in <b class="text-red">Montgomery County, Maryland</b></h2>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <h2>where I attended...</h2>
+      <img alt="The Heights School" class="school-img" src="/images/theheights.png" />
+      <img alt="Georgetown Prep" class="school-img" src="/images/prep.png" />
+      <br/>
+      <span class="img-caption"><b>The Height School</b></span>
+	  <span class="img-caption"><b>Georgetown Prep</b></span>
+      <span class="img-caption"><b>2000 - 2006</b></span>
+      <span class="img-caption"><b>2006 - 2010</b></span>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <div class="bar graybar" style="margin-top: 35px"></div>
+    </div>
+
+    <div class="about-content-inner wow fadeIn" style="min-height: 10px;">
+      <h2>I grew up with a loving <b class="text-red">family</b></h2>
+    </div>
+
+    <div class="about-content-inner wow fadeIn" style="margin-bottom: 0px;">
+      <img alt="Mom me" class="family-img gray" src="/images/parents.jpg" />
+      <img alt="Dad me" class="family-img red" src="/images/family.jpg" style="margin-right: 0px;" />
+    </div>
+
+    <div class="about-content-inner wow fadeIn" style="margin-top: 0px; padding-top: 0px;">
+      <img alt="Brother me" class="family-img red" src="/images/brothers.jpg" />
+      <img alt="Grandparents me" class="family-img gray" src="/images/mom.jpg" style="margin-right: 0px;" />
+    </div>
+
+    <div class="about-content-inner wow fadeIn" style="margin-top: 30px;">
+	  <h2 class="taiwan-text">My family has roots from <b class="text-red">Greece</b> and <b class="text-red">India</b></h2>
+	  </br></br></br></br>
+	  <img alt="Greece" class="taiwan-island" src="/images/greece.png" />
+	  </br></br>
+	  <img alt="India" class="taiwan-island" src="/images/india.png" />
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <div class="bar graybar" style="margin-top: 0px"></div>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <h2>Some <b class="text-red">hobbies</b> of mine include...</h2>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <img alt="Violin" class="hobby-img" src="/images/basketball.svg" />
+      <img alt="Drums" class="hobby-img" src="/images/music.svg" />
+      <br/>
+      <span class="img-caption-hobby">Sports</span>
+      <span class="img-caption-hobby red">Music</span>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <img alt="Mma" class="hobby-img" src="/images/glassart.svg" />
+      <img alt="Snowboard" class="hobby-img" src="/images/ski.svg" />
+      <br/>
+      <span class="img-caption-hobby red">Glass Art</span>
+      <span class="img-caption-hobby">Skiing</span>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <img alt="Programming" class="hobby-img" src="/images/programming.svg" />
+      <img alt="Magic" class="hobby-img" src="/images/hike.svg" />
+      <br/>
+      <span class="img-caption-hobby">Hacking</span>
+      <span class="img-caption-hobby red">Hiking</span>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <div class="bar graybar" style="margin-top: 0px"></div>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <h2>I graduated from the <b class="text-red">University of Virginia</b> in 2014</h2>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <img alt="Graduation me" class="graduation-img" style="width: 50%; height: 50%; text-align: center;" src="/images/graduation.jpg" />
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <h2>with a B.S. in both <b class="text-red">Computer Science</b> and <b class="text-red">Systems Engineering.</b></h2>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <div class="bar graybar" style="margin-top: 0px"></div>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <h2>In college I was <b class="text-red">heavily involved</b> with...</h2>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <img alt="Track" class="hobby-img grayborder" src="/images/track.jpg" />
+      <img alt="HackCville" class="hobby-img grayborder" src="/images/hackcville.png" />
+      <br/>
+      <span class="img-caption-hobby">Varsity Track & Field</span>
+      <span class="img-caption-hobby" style="margin-left:20px">Hack Cville</span>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <div class="bar graybar"></div>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <h2>Today I live in <b class="text-red">Washington, DC</b></h2>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <a href="https://www.fiscalnote.com"><img alt="Mastercard logo" class="fn-logo-img" src="/images/mastercard.jpg" /></a>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <h2>Where I am a <b class="text-red">Principal Data Engineer</b> at <a href="https://www.mastercard.us" class="fiscalnote-link">APT, a Mastercard company</a></h2>
+    </div>
+
+    <div class="about-content-inner wow fadeIn">
+      <h2>To be <b class="text-red">continued</b>...</h2>
+    </div>
+
+  </div>
+</div>
+
+
+
+  </body>
 </html>
