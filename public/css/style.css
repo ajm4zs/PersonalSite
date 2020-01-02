@@ -24,7 +24,7 @@ Import Google Fonts
 @font-face { font-family: "otto"; src: url('../fonts/Otto.ttf'); }
 @font-face { font-family: "thecut"; src: url('../fonts/MJFZhafira.ttf'); }
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime:400,bold&display=swap');
 
 /*--------------------
 1. General
@@ -183,7 +183,7 @@ color: #B1B1B1;
 }
 
 a:hover, a:focus, a:active, a.active {
-	color: #fec503;
+	color: #b51832;
 }
 a, a:hover, a:focus, a:active, a.active {
 	outline: 0;
