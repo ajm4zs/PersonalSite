@@ -73,3 +73,6 @@ public/images/*
 # Other
 .DS_Store
 .vscode
+*.csr
+*.key
+ssl/

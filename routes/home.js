@@ -25,8 +25,8 @@ router.get('/resume', function (req, res, next) {
 	});
 });
 
-router.get('/tetris', function (req, res, next) {
-	res.render('tetris', {
+router.get('/2048', function (req, res, next) {
+	res.render('2048', {
 		title: 'Alex Mulchandani'
 	});
 });

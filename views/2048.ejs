@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Alex Mulchandani - 2048</title>
+	<link rel="icon" href="images/AM_Logo_Cropped.png">
+	<link rel="stylesheet" type="text/css" href="css/2048.css">
+	<!-- Material Design Bootstrap -->
+	<link href="/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light static-top text-center" style="color: #231F20">
+		<a class="navbar-brand" href="/"><img src="/images/AM_Logo_Cropped.png" height="80" width="80" alt="Alex Mulchandani"></a>
+		<%- include('nav-items'); -%>
+	</nav>
+
+	<div class = "wrapper">
+		<div class = "game-area">
+			<div class = "title">
+					<br><br><br>
+				<span class = "title-tile-number">2048</span>
+			</div>
+			<div class = "score">
+				<span class = "score-title">SCORE</span>
+				<span class = "score-value">0</span>
+			</div>
+			<table cellspacing = "10" class = "game-table">
+				<tr>
+					<td class="cell 1 a"></td>
+					<td class="cell 2 a"></td>
+					<td class="cell 3 a"></td>
+					<td class="cell 4 a"></td>
+				</tr>
+				<tr>
+					<td class="cell 1 b"></td>
+					<td class="cell 2 b"></td>
+					<td class="cell 3 b"></td>
+					<td class="cell 4 b"></td>
+				</tr>
+				<tr>
+					<td class="cell 1 c"></td>
+					<td class="cell 2 c"></td>
+					<td class="cell 3 c"></td>
+					<td class="cell 4 c"></td>
+				</tr>
+				<tr>
+					<td class="cell 1 d"></td>
+					<td class="cell 2 d"></td>
+					<td class="cell 3 d"></td>
+					<td class="cell 4 d"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<script type="text/javascript" src = "js/2048.js"></script>
+</body>
+</html>
