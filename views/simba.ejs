@@ -28,7 +28,7 @@
 		<link href="/css/style.css" rel="stylesheet">
 
 	</head>
-	<body style="background-color: #231F20">
+	<body id="page-top" style="background-color: #231F20">
 
 		<nav class="navbar navbar-expand-lg navbar-light static-top text-center" style="color: #231F20">
 			<a class="navbar-brand" href="/"><img src="/images/AM_Logo_Cropped.png" height="80" width="80" alt="Alex Mulchandani"></a>
@@ -36,10 +36,249 @@
 		</nav>
 
 		<br><br>
-		<h1 style="color: white; text-align: center; font-family: 'Courier Prime', monospace;">
-			Under Construction... Coming Soon!
-		</h1>
-		<br><br>
+		<ul class="nav justify-content-center light-bg pb-0">
+			<li class="nav-item">
+				<a class="nav-link" disabled style="color: rgba(255, 255, 255, 0.616); font-family: 'Courier Prime', monospace;">Jump To: </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#adventureBoy">Adventure</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#badBoy">Bad</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#beachBoy">Beach</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#familyBoy">Family</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#goodBoy">Good</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#modelBoy">Model</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#needyBoy">Needy</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#playBoy">Play</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#sleepyBoy">Sleepy</a>
+			</li>
+		</ul>
+
+		<section class="page-section" id="portfolio">
+
+			<div id="adventureBoy" class="container shadow p-3 mb-5 rounded">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase" style="color: white; font-family: 'Courier Prime', monospace;">Adventure Boy</h2>
+						<br><br>
+					</div>
+				</div>
+				<div class="row">
+					<% adventure.forEach(function(img, index) { %>
+						<div class="col-md-3 portfolio-item simba-pic" style="background-color: #231F20">
+							<a class="portfolio-link" data-toggle="modal" href="#modal_<%= img.id%>">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<p><%= img.caption %></p>
+								</div>
+							</div>
+							<img class="img-fluid simba-pic" src="images/Simba/Simba_<%= img.id %>.<%= img.ext %>" style="width: 100%; height: 100%;" alt="">
+							</a>
+						</div>
+					<% }); %>
+				</div>
+			</div>
+
+			<div id="badBoy" class="container shadow p-3 mb-5 rounded">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase" style="color: white; font-family: 'Courier Prime', monospace;">Bad Boy</h2>
+						<br><br>
+					</div>
+				</div>
+				<div class="row">
+					<% bad.forEach(function(img, index) { %>
+						<div class="col-md-3 portfolio-item simba-pic" style="background-color: #231F20">
+							<a class="portfolio-link" data-toggle="modal" href="#modal_<%= img.id%>">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<p><%= img.caption %></p>
+								</div>
+							</div>
+							<img class="img-fluid simba-pic" src="images/Simba/Simba_<%= img.id %>.<%= img.ext %>" style="width: 100%; height: 100%;" alt="">
+							</a>
+						</div>
+					<% }); %>
+				</div>
+			</div>
+
+			<div id="beachBoy" class="container shadow p-3 mb-5 rounded">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase" style="color: white; font-family: 'Courier Prime', monospace;">Beach Boy</h2>
+						<br><br>
+					</div>
+				</div>
+				<div class="row">
+					<% beach.forEach(function(img, index) { %>
+						<div class="col-md-3 portfolio-item simba-pic" style="background-color: #231F20">
+							<a class="portfolio-link" data-toggle="modal" href="#modal_<%= img.id%>">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<p><%= img.caption %></p>
+								</div>
+							</div>
+							<img class="img-fluid simba-pic" src="images/Simba/Simba_<%= img.id %>.<%= img.ext %>" style="width: 100%; height: 100%;" alt="">
+							</a>
+						</div>
+					<% }); %>
+				</div>
+			</div>
+
+			<div id="familyBoy" class="container shadow p-3 mb-5 rounded">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase" style="color: white; font-family: 'Courier Prime', monospace;">Family Boy</h2>
+						<br><br>
+					</div>
+				</div>
+				<div class="row">
+					<% family.forEach(function(img, index) { %>
+						<div class="col-md-3 portfolio-item simba-pic" style="background-color: #231F20">
+							<a class="portfolio-link" data-toggle="modal" href="#modal_<%= img.id%>">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<p><%= img.caption %></p>
+								</div>
+							</div>
+							<img class="img-fluid simba-pic" src="images/Simba/Simba_<%= img.id %>.<%= img.ext %>" style="width: 100%; height: 100%;" alt="">
+							</a>
+						</div>
+					<% }); %>
+				</div>
+			</div>
+
+			<div id="goodBoy" class="container shadow p-3 mb-5 rounded">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase" style="color: white; font-family: 'Courier Prime', monospace;">Good Boy</h2>
+						<br><br>
+					</div>
+				</div>
+				<div class="row">
+					<% good.forEach(function(img, index) { %>
+						<div class="col-md-3 portfolio-item simba-pic" style="background-color: #231F20">
+							<a class="portfolio-link" data-toggle="modal" href="#modal_<%= img.id%>">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<p><%= img.caption %></p>
+								</div>
+							</div>
+							<img class="img-fluid simba-pic" src="images/Simba/Simba_<%= img.id %>.<%= img.ext %>" style="width: 100%; height: 100%;" alt="">
+							</a>
+						</div>
+					<% }); %>
+				</div>
+			</div>
+
+			<div id="modelBoy" class="container shadow p-3 mb-5 rounded">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase" style="color: white; font-family: 'Courier Prime', monospace;">Model Boy</h2>
+						<br><br>
+					</div>
+				</div>
+				<div class="row">
+					<% model.forEach(function(img, index) { %>
+						<div class="col-md-3 portfolio-item simba-pic" style="background-color: #231F20">
+							<a class="portfolio-link" data-toggle="modal" href="#modal_<%= img.id%>">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<p><%= img.caption %></p>
+								</div>
+							</div>
+							<img class="img-fluid simba-pic" src="images/Simba/Simba_<%= img.id %>.<%= img.ext %>" style="width: 100%; height: 100%;" alt="">
+							</a>
+						</div>
+					<% }); %>
+				</div>
+			</div>
+
+			<div id="needyBoy" class="container shadow p-3 mb-5 rounded">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase" style="color: white; font-family: 'Courier Prime', monospace;">Needy Boy</h2>
+						<br><br>
+					</div>
+				</div>
+				<div class="row">
+					<% needy.forEach(function(img, index) { %>
+						<div class="col-md-3 portfolio-item simba-pic" style="background-color: #231F20">
+							<a class="portfolio-link" data-toggle="modal" href="#modal_<%= img.id%>">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<p><%= img.caption %></p>
+								</div>
+							</div>
+							<img class="img-fluid simba-pic" src="images/Simba/Simba_<%= img.id %>.<%= img.ext %>" style="width: 100%; height: 100%;" alt="">
+							</a>
+						</div>
+					<% }); %>
+				</div>
+			</div>
+
+			<div id="playBoy" class="container shadow p-3 mb-5 rounded">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase" style="color: white; font-family: 'Courier Prime', monospace;">Play Boy</h2>
+						<br><br>
+					</div>
+				</div>
+				<div class="row">
+					<% play.forEach(function(img, index) { %>
+						<div class="col-md-3 portfolio-item simba-pic" style="background-color: #231F20">
+							<a class="portfolio-link" data-toggle="modal" href="#modal_<%= img.id%>">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<p><%= img.caption %></p>
+								</div>
+							</div>
+							<img class="img-fluid simba-pic" src="images/Simba/Simba_<%= img.id %>.<%= img.ext %>" style="width: 100%; height: 100%;" alt="">
+							</a>
+						</div>
+					<% }); %>
+				</div>
+			</div>
+
+			<div id="sleepyBoy" class="container shadow p-3 mb-5 rounded">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase" style="color: white; font-family: 'Courier Prime', monospace;">Sleepy Boy</h2>
+						<br><br>
+					</div>
+				</div>
+				<div class="row">
+					<% sleepy.forEach(function(img, index) { %>
+						<div class="col-md-3 portfolio-item simba-pic" style="background-color: #231F20">
+							<a class="portfolio-link" data-toggle="modal" href="#modal_<%= img.id%>">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<p><%= img.caption %></p>
+								</div>
+							</div>
+							<img class="img-fluid simba-pic" src="images/Simba/Simba_<%= img.id %>.<%= img.ext %>" style="width: 100%; height: 100%;" alt="">
+							</a>
+						</div>
+					<% }); %>
+				</div>
+			</div>
+
+		</section>
 
 		<div class="text-center">
 			<a href="mailto:ajmulchapps@gmail.com" class="fas fa-envelope fa-nav" style="color: white"></a>
@@ -49,5 +288,41 @@
 			<a href="https://www.facebook.com/alex.mulchandani/" target="_blank" class="fab fa-facebook fa-nav" style="color: white"></a>
 		</div>
 
+
+		<!-- Portfolio Modals -->
+		<% for (img in data) { %>
+			<div class="modal fade" id="modal_<%= data[img].id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header text-center">
+							<h4 class="modal-title w-100 font-weight-bold" style="font-family: 'Courier Prime', monospace; "><%= data[img].caption %></h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body mx-3">
+							<img class="img-fluid" src="images/Simba/Simba_<%= data[img].id %>.<%= data[img].ext %>" style="width: 100%; height: 100%;" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		<% } %>
+
+		<p id="back-top">
+			<a href="#top"><i class="fa fa-angle-up"></i></a>
+		</p>
+
+		<script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="/js/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script src="/js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="/js/mdb.min.js"></script>
+
+		<script src="/js/cbpAnimatedHeader.js"></script>
+		<script src="/js/jquery.appear.js"></script>
+		<script src="/js/SmoothScroll.min.js"></script>
+		<script src="/js/main.js"></script>
 	</body>
 </html>

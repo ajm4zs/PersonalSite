@@ -30,6 +30,19 @@ Import Google Fonts
 1. General
 --------------------*/
 
+.nav-link {
+	color: white;
+	font-family: 'Courier Prime', monospace;
+}
+
+.nav-link:hover, .nav-link:active, .nav-link.active, .nav-link:focus {
+	color: rgba(255, 255, 255, 0.219)
+}
+
+.simba-pic {
+	border-radius: 8px;
+}
+
 .home-nav:hover {
 	border-bottom: 2px solid white;
 	border-top: 2px solid white;
@@ -245,7 +258,7 @@ ul li {
 	transition: 1s;
 }
 #back-top a:hover {
-	background: #fed136;
+	background: #42413b;
 }
 /* arrow icon (span tag) */
 #back-top i {
@@ -283,7 +296,7 @@ and (max-width : 480px) {
 	margin: 0 auto;
 	cursor: pointer;
 	width: 100%;
-	height: 70%;
+	height: 80%;
   }
 
   #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -293,6 +306,7 @@ and (max-width : 480px) {
 	transition: all ease 0.5s;
 	opacity: 0;
 	background: rgba(59, 59, 58, 0.9);
+	border-radius: 8px;
   }
 
   #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -315,8 +329,10 @@ and (max-width : 480px) {
   }
 
   #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4,
+  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content p {
 	margin: 0;
+	color: white;
   }
 
   #portfolio .portfolio-item .portfolio-caption {
@@ -348,7 +364,7 @@ and (max-width : 480px) {
 
   @media (min-width: 767px) {
 	#portfolio .portfolio-item {
-	  margin: 0 0 30px;
+	  margin: 0 0 0px;
 	}
   }
 
@@ -424,4 +440,13 @@ and (max-width : 480px) {
 	/* IE 9 */
 	transform: rotate(90deg);
 	background-color: #212529;
+  }
+
+  .row.display-flex {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  .row.display-flex > [class*='col-'] {
+	display: flex;
+	flex-direction: column;
   }
