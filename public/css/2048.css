@@ -40,8 +40,8 @@ body{
 .title{
 	margin:10px 10px;
 	float:right;
-	height:150px;
-	width:150px;
+	height:120px;
+	width:120px;
 	font-size: 27px;
 	color:#f9f6f2;
 	background:#edc501;
@@ -59,7 +59,7 @@ body{
 .score{
 	margin:10px 10px;
 	position:;
-	height:100px;
+	height:80px;
 	width:150px;
 	background: #bbada0;
 	border-radius: 5px;
@@ -201,7 +201,7 @@ body{
 	.game-table{
 		left:0;
 		width:414px;
-		height:414px;
+		height:314px;
 		background: #bbada0;
 		border-radius:5px;
 	}
