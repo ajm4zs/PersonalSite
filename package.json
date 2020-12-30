@@ -1,0 +1,37 @@
+{
+  "name": "personalsite",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test",
+    "dev": "nodemon server.js NODE_ENV=development",
+    "lint": "eslint . --ignore-path scratch.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ajm4zs/PersonalSite.git"
+  },
+  "author": "Alex Mulchandani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajm4zs/PersonalSite/issues"
+  },
+  "homepage": "https://github.com/ajm4zs/PersonalSite#readme",
+  "dependencies": {
+    "async": "^3.1.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "morgan": "^1.9.1",
+    "openssl": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.11.0"
+  }
+}
